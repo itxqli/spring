@@ -4,6 +4,6 @@ package com.lxq.framework.spring;
  */
 public class HelloWorld {
     public void test() {
-
+        System.out.println("201608201142");
     }
 }
