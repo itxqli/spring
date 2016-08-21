@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by lxq on 2016/8/21.
  */
 @Controller
-@RequestMapping("/")
+@RequestMapping("/say")
 public class HelloWorldController {
     @Autowired
     private HelloWorldService helloWorldService;
 
-    @RequestMapping("/hello.html")
+    @RequestMapping("/hello")
     public String sayHello() {
-        return "index";
+        return "hello";
     }
 }
