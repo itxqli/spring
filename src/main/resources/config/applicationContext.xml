@@ -11,4 +11,6 @@
 				http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
 				http://www.springframework.org/schema/tx
 				http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+	<context:property-placeholder location="classpath:config/config-base-test.properties" ignore-unresolvable="true"/>
+	<context:component-scan base-package="com.lxq.framework.spring" />
 </beans>

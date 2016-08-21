@@ -1,5 +1,7 @@
-package com.lxq.framework.spring;
+package com.lxq.framework.spring.web;
 
+import com.lxq.framework.spring.service.HelloWorldService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -9,8 +11,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/")
 public class HelloWorldController {
+    @Autowired
+    private HelloWorldService helloWorldService;
+
     @RequestMapping("/hello.html")
     public String sayHello() {
-        return "helloworld";
+        return "index";
     }
 }
